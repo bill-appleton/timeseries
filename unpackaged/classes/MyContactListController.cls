@@ -8,7 +8,7 @@ public class MyContactListController {
      * @return List of Contact records.
      */
     public static List<Contact> getContacts() {
-        return [Select Id, Name, Email, Title, Phone From Contact];
+        return [Select Id, Name, Email, Title, Phone From Contact LIMIT 100];
     }
     
     /** 
@@ -16,7 +16,7 @@ public class MyContactListController {
      * @return List of Lead records.
      */
     public static List<Lead> getLeads() {
-        return [Select Id, Name, Email, Title, Phone From Lead];
+        return [Select Id, Name, Email, Title, Phone From Lead LIMIT 100];
     }
     
     /** 
@@ -24,7 +24,7 @@ public class MyContactListController {
      * @return List of Adam_Bar__c records.
      */
     public static List<Adam_Bar__c> getAdams() {
-        return [Select Id, Name From Adam_Bar__c];
+        return [Select Id, Name From Adam_Bar__c LIMIT 100];
     }
     
     /** 
