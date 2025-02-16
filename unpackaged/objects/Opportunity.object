@@ -144,6 +144,24 @@
 	<enableFeeds>true</enableFeeds>
 	<enableHistory>false</enableHistory>
 	<externalSharingModel>Private</externalSharingModel>
+	<searchLayouts>
+		<customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
+		<customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+		<customTabListAdditionalFields>OPPORTUNITY.CLOSE_DATE</customTabListAdditionalFields>
+		<lookupDialogsAdditionalFields>OPPORTUNITY.NAME</lookupDialogsAdditionalFields>
+		<lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+		<lookupDialogsAdditionalFields>ACCOUNT.SITE</lookupDialogsAdditionalFields>
+		<lookupPhoneDialogsAdditionalFields>OPPORTUNITY.NAME</lookupPhoneDialogsAdditionalFields>
+		<lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+		<lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+		<searchResultsAdditionalFields>OPPORTUNITY.NAME</searchResultsAdditionalFields>
+		<searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+		<searchResultsAdditionalFields>ACCOUNT.SITE</searchResultsAdditionalFields>
+		<searchResultsAdditionalFields>OPPORTUNITY.STAGE_NAME</searchResultsAdditionalFields>
+		<searchResultsAdditionalFields>OPPORTUNITY.CLOSE_DATE</searchResultsAdditionalFields>
+		<searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+	</searchLayouts>
+	<sharingModel>Private</sharingModel>
 	<fields>
 		<fullName>AccountId</fullName>
 		<trackFeedHistory>false</trackFeedHistory>
@@ -179,35 +197,6 @@
 		<trackFeedHistory>false</trackFeedHistory>
 		<trackTrending>false</trackTrending>
 		<type>Lookup</type>
-	</fields>
-	<fields>
-		<fullName>DB_Competitor__c</fullName>
-		<description>This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and can delete this field.</description>
-		<label>DB Competitor</label>
-		<required>false</required>
-		<trackFeedHistory>false</trackFeedHistory>
-		<trackTrending>false</trackTrending>
-		<type>Picklist</type>
-		<valueSet>
-			<valueSetDefinition>
-				<sorted>false</sorted>
-				<value>
-					<fullName>Competitor A</fullName>
-					<default>false</default>
-					<label>Competitor A</label>
-				</value>
-				<value>
-					<fullName>Competitor B</fullName>
-					<default>false</default>
-					<label>Competitor B</label>
-				</value>
-				<value>
-					<fullName>Competitor C</fullName>
-					<default>false</default>
-					<label>Competitor C</label>
-				</value>
-			</valueSetDefinition>
-		</valueSet>
 	</fields>
 	<fields>
 		<fullName>Database__c</fullName>
@@ -248,6 +237,35 @@
 					<fullName>Other</fullName>
 					<default>false</default>
 					<label>Other</label>
+				</value>
+			</valueSetDefinition>
+		</valueSet>
+	</fields>
+	<fields>
+		<fullName>DB_Competitor__c</fullName>
+		<description>This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and can delete this field.</description>
+		<label>DB Competitor</label>
+		<required>false</required>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Picklist</type>
+		<valueSet>
+			<valueSetDefinition>
+				<sorted>false</sorted>
+				<value>
+					<fullName>Competitor A</fullName>
+					<default>false</default>
+					<label>Competitor A</label>
+				</value>
+				<value>
+					<fullName>Competitor B</fullName>
+					<default>false</default>
+					<label>Competitor B</label>
+				</value>
+				<value>
+					<fullName>Competitor C</fullName>
+					<default>false</default>
+					<label>Competitor C</label>
 				</value>
 			</valueSetDefinition>
 		</valueSet>
@@ -425,6 +443,17 @@
 		<fullName>Name</fullName>
 		<trackFeedHistory>true</trackFeedHistory>
 		<trackTrending>false</trackTrending>
+	</fields>
+	<fields>
+		<fullName>newss_external_id__c</fullName>
+		<externalId>true</externalId>
+		<label>newss_external_id</label>
+		<length>200</length>
+		<required>false</required>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Text</type>
+		<unique>false</unique>
 	</fields>
 	<fields>
 		<fullName>NextStep</fullName>
@@ -664,17 +693,6 @@
 		<trackTrending>false</trackTrending>
 		<type>Picklist</type>
 	</fields>
-	<fields>
-		<fullName>newss_external_id__c</fullName>
-		<externalId>true</externalId>
-		<label>newss_external_id</label>
-		<length>200</length>
-		<required>false</required>
-		<trackFeedHistory>false</trackFeedHistory>
-		<trackTrending>false</trackTrending>
-		<type>Text</type>
-		<unique>false</unique>
-	</fields>
 	<listViews>
 		<fullName>AllOpportunities</fullName>
 		<filterScope>Everything</filterScope>
@@ -760,24 +778,6 @@
 		</filters>
 		<label>Won</label>
 	</listViews>
-	<searchLayouts>
-		<customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
-		<customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
-		<customTabListAdditionalFields>OPPORTUNITY.CLOSE_DATE</customTabListAdditionalFields>
-		<lookupDialogsAdditionalFields>OPPORTUNITY.NAME</lookupDialogsAdditionalFields>
-		<lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
-		<lookupDialogsAdditionalFields>ACCOUNT.SITE</lookupDialogsAdditionalFields>
-		<lookupPhoneDialogsAdditionalFields>OPPORTUNITY.NAME</lookupPhoneDialogsAdditionalFields>
-		<lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
-		<lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
-		<searchResultsAdditionalFields>OPPORTUNITY.NAME</searchResultsAdditionalFields>
-		<searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
-		<searchResultsAdditionalFields>ACCOUNT.SITE</searchResultsAdditionalFields>
-		<searchResultsAdditionalFields>OPPORTUNITY.STAGE_NAME</searchResultsAdditionalFields>
-		<searchResultsAdditionalFields>OPPORTUNITY.CLOSE_DATE</searchResultsAdditionalFields>
-		<searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
-	</searchLayouts>
-	<sharingModel>Private</sharingModel>
 	<webLinks>
 		<fullName>Influence_Map</fullName>
 		<availability>online</availability>
