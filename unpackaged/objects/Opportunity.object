@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+	<actionOverrides>
+		<actionName>AddInfluence</actionName>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>AddInfluence</actionName>
+		<formFactor>Large</formFactor>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>AddInfluence</actionName>
+		<formFactor>Small</formFactor>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>CancelEdit</actionName>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>CancelEdit</actionName>
+		<formFactor>Large</formFactor>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>CancelEdit</actionName>
+		<formFactor>Small</formFactor>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>Clone</actionName>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>Clone</actionName>
+		<formFactor>Large</formFactor>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>Clone</actionName>
+		<formFactor>Small</formFactor>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>Delete</actionName>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>Delete</actionName>
+		<formFactor>Large</formFactor>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>Delete</actionName>
+		<formFactor>Small</formFactor>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>Edit</actionName>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>Edit</actionName>
+		<formFactor>Large</formFactor>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>Edit</actionName>
+		<formFactor>Small</formFactor>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>List</actionName>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>List</actionName>
+		<formFactor>Large</formFactor>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>List</actionName>
+		<formFactor>Small</formFactor>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>New</actionName>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>New</actionName>
+		<formFactor>Large</formFactor>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>New</actionName>
+		<formFactor>Small</formFactor>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>SaveEdit</actionName>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>SaveEdit</actionName>
+		<formFactor>Large</formFactor>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>SaveEdit</actionName>
+		<formFactor>Small</formFactor>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>Tab</actionName>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>Tab</actionName>
+		<formFactor>Large</formFactor>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>Tab</actionName>
+		<formFactor>Small</formFactor>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>View</actionName>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>View</actionName>
+		<formFactor>Large</formFactor>
+		<type>Default</type>
+	</actionOverrides>
+	<actionOverrides>
+		<actionName>View</actionName>
+		<formFactor>Small</formFactor>
+		<type>Default</type>
+	</actionOverrides>
+	<compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+	<enableFeeds>true</enableFeeds>
+	<enableHistory>false</enableHistory>
+	<externalSharingModel>Private</externalSharingModel>
+	<fields>
+		<fullName>AccountId</fullName>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Lookup</type>
+	</fields>
+	<fields>
+		<fullName>Amount</fullName>
+		<trackFeedHistory>true</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+	</fields>
+	<fields>
+		<fullName>CampaignId</fullName>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Lookup</type>
+	</fields>
+	<fields>
+		<fullName>CloseDate</fullName>
+		<trackFeedHistory>true</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+	</fields>
+	<fields>
+		<fullName>ContractEndDate__c</fullName>
+		<label>Contract End Date</label>
+		<required>false</required>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Date</type>
+	</fields>
+	<fields>
+		<fullName>ContractId</fullName>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Lookup</type>
+	</fields>
+	<fields>
+		<fullName>DB_Competitor__c</fullName>
+		<description>This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and can delete this field.</description>
+		<label>DB Competitor</label>
+		<required>false</required>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Picklist</type>
+		<valueSet>
+			<valueSetDefinition>
+				<sorted>false</sorted>
+				<value>
+					<fullName>Competitor A</fullName>
+					<default>false</default>
+					<label>Competitor A</label>
+				</value>
+				<value>
+					<fullName>Competitor B</fullName>
+					<default>false</default>
+					<label>Competitor B</label>
+				</value>
+				<value>
+					<fullName>Competitor C</fullName>
+					<default>false</default>
+					<label>Competitor C</label>
+				</value>
+			</valueSetDefinition>
+		</valueSet>
+	</fields>
+	<fields>
+		<fullName>Database__c</fullName>
+		<label>Database</label>
+		<required>false</required>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Picklist</type>
+		<valueSet>
+			<valueSetDefinition>
+				<sorted>false</sorted>
+				<value>
+					<fullName>DB2</fullName>
+					<default>false</default>
+					<label>DB2</label>
+				</value>
+				<value>
+					<fullName>SQL Server</fullName>
+					<default>false</default>
+					<label>SQL Server</label>
+				</value>
+				<value>
+					<fullName>My SQL</fullName>
+					<default>false</default>
+					<label>My SQL</label>
+				</value>
+				<value>
+					<fullName>Oracle</fullName>
+					<default>false</default>
+					<label>Oracle</label>
+				</value>
+				<value>
+					<fullName>SAS</fullName>
+					<default>false</default>
+					<label>SAS</label>
+				</value>
+				<value>
+					<fullName>Other</fullName>
+					<default>false</default>
+					<label>Other</label>
+				</value>
+			</valueSetDefinition>
+		</valueSet>
+	</fields>
+	<fields>
+		<fullName>DealLostReason__c</fullName>
+		<label>Deal Lost Reason</label>
+		<required>false</required>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Picklist</type>
+		<valueSet>
+			<valueSetDefinition>
+				<sorted>false</sorted>
+				<value>
+					<fullName>Competitor</fullName>
+					<default>false</default>
+					<label>Competitor</label>
+				</value>
+				<value>
+					<fullName>No Purchase Made</fullName>
+					<default>false</default>
+					<label>No Purchase Made</label>
+				</value>
+				<value>
+					<fullName>Poor repore with sales team</fullName>
+					<default>false</default>
+					<label>Poor repore with sales team</label>
+				</value>
+				<value>
+					<fullName>Price</fullName>
+					<default>false</default>
+					<label>Price</label>
+				</value>
+				<value>
+					<fullName>Product limitation</fullName>
+					<default>false</default>
+					<label>Product limitation</label>
+				</value>
+				<value>
+					<fullName>Services capabilities</fullName>
+					<default>false</default>
+					<label>Services capabilities</label>
+				</value>
+				<value>
+					<fullName>Unknown</fullName>
+					<default>false</default>
+					<label>Unknown</label>
+				</value>
+			</valueSetDefinition>
+		</valueSet>
+	</fields>
+	<fields>
+		<fullName>Description</fullName>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+	</fields>
+	<fields>
+		<fullName>ExpectedRevenue</fullName>
+		<trackTrending>false</trackTrending>
+	</fields>
+	<fields>
+		<fullName>InitialBPRDate__c</fullName>
+		<label>Initial BPR Date</label>
+		<required>false</required>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Date</type>
+	</fields>
+	<fields>
+		<fullName>IntegrationNeeds__c</fullName>
+		<label>Integration Needs</label>
+		<required>false</required>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Picklist</type>
+		<valueSet>
+			<valueSetDefinition>
+				<sorted>false</sorted>
+				<value>
+					<fullName>ERP</fullName>
+					<default>false</default>
+					<label>ERP</label>
+				</value>
+				<value>
+					<fullName>Accounting</fullName>
+					<default>false</default>
+					<label>Accounting</label>
+				</value>
+				<value>
+					<fullName>CRM</fullName>
+					<default>false</default>
+					<label>CRM</label>
+				</value>
+				<value>
+					<fullName>HR</fullName>
+					<default>false</default>
+					<label>HR</label>
+				</value>
+				<value>
+					<fullName>None</fullName>
+					<default>false</default>
+					<label>None</label>
+				</value>
+			</valueSetDefinition>
+		</valueSet>
+	</fields>
+	<fields>
+		<fullName>IqScore</fullName>
+		<trackTrending>false</trackTrending>
+	</fields>
+	<fields>
+		<fullName>IsPrivate</fullName>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+	</fields>
+	<fields>
+		<fullName>KeyProductRequirement__c</fullName>
+		<label>Key Product Requirement</label>
+		<required>false</required>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Picklist</type>
+		<valueSet>
+			<valueSetDefinition>
+				<sorted>false</sorted>
+				<value>
+					<fullName>Breadth of Functionality</fullName>
+					<default>false</default>
+					<label>Breadth of Functionality</label>
+				</value>
+				<value>
+					<fullName>Full reporting</fullName>
+					<default>false</default>
+					<label>Full reporting</label>
+				</value>
+				<value>
+					<fullName>Ease of use</fullName>
+					<default>false</default>
+					<label>Ease of use</label>
+				</value>
+			</valueSetDefinition>
+		</valueSet>
+	</fields>
+	<fields>
+		<fullName>LeadSource</fullName>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Picklist</type>
+	</fields>
+	<fields>
+		<fullName>MainCompetitor__c</fullName>
+		<label>Main Competitor</label>
+		<required>false</required>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Picklist</type>
+		<valueSet>
+			<valueSetDefinition>
+				<sorted>false</sorted>
+				<value>
+					<fullName>Competitor A</fullName>
+					<default>false</default>
+					<label>Competitor A</label>
+				</value>
+				<value>
+					<fullName>Competitor C</fullName>
+					<default>false</default>
+					<label>Competitor C</label>
+				</value>
+			</valueSetDefinition>
+		</valueSet>
+	</fields>
+	<fields>
+		<fullName>Name</fullName>
+		<trackFeedHistory>true</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+	</fields>
+	<fields>
+		<fullName>NextStep</fullName>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+	</fields>
+	<fields>
+		<fullName>NumberofLicenses__c</fullName>
+		<externalId>false</externalId>
+		<label>Number of Licenses</label>
+		<precision>8</precision>
+		<required>false</required>
+		<scale>0</scale>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Number</type>
+		<unique>false</unique>
+	</fields>
+	<fields>
+		<fullName>OwnerId</fullName>
+		<trackFeedHistory>true</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Lookup</type>
+	</fields>
+	<fields>
+		<fullName>PO_Number__c</fullName>
+		<description>AccountDynamics</description>
+		<externalId>false</externalId>
+		<label>PO Number</label>
+		<length>25</length>
+		<required>false</required>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Text</type>
+		<unique>false</unique>
+	</fields>
+	<fields>
+		<fullName>Pricebook2Id</fullName>
+		<trackTrending>false</trackTrending>
+		<type>Lookup</type>
+	</fields>
+	<fields>
+		<fullName>Primary_Contact__c</fullName>
+		<deleteConstraint>SetNull</deleteConstraint>
+		<label>Billing Contact</label>
+		<referenceTo>Contact</referenceTo>
+		<relationshipLabel>Opportunities</relationshipLabel>
+		<relationshipName>Opportunities</relationshipName>
+		<required>false</required>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Lookup</type>
+	</fields>
+	<fields>
+		<fullName>Probability</fullName>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+	</fields>
+	<fields>
+		<fullName>Product__c</fullName>
+		<label>Product</label>
+		<required>false</required>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Picklist</type>
+		<valueSet>
+			<valueSetDefinition>
+				<sorted>false</sorted>
+				<value>
+					<fullName>Licenses - Product B</fullName>
+					<default>false</default>
+					<label>Licenses - Product B</label>
+				</value>
+				<value>
+					<fullName>Licenses - Product C</fullName>
+					<default>false</default>
+					<label>Licenses - Product C</label>
+				</value>
+				<value>
+					<fullName>Gold Support</fullName>
+					<default>false</default>
+					<label>Gold Support</label>
+				</value>
+				<value>
+					<fullName>Training</fullName>
+					<default>false</default>
+					<label>Training</label>
+				</value>
+				<value>
+					<fullName>Implementation</fullName>
+					<default>false</default>
+					<label>Implementation</label>
+				</value>
+				<value>
+					<fullName>Maintenance</fullName>
+					<default>false</default>
+					<label>Maintenance</label>
+				</value>
+				<value>
+					<fullName>Licenses - Product A</fullName>
+					<default>false</default>
+					<label>Licenses - Product A</label>
+				</value>
+				<value>
+					<fullName>Other</fullName>
+					<default>false</default>
+					<label>Other</label>
+				</value>
+			</valueSetDefinition>
+		</valueSet>
+	</fields>
+	<fields>
+		<fullName>ReferenceAccountUsed__c</fullName>
+		<externalId>false</externalId>
+		<label>Reference Account Used</label>
+		<length>50</length>
+		<required>false</required>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Text</type>
+		<unique>false</unique>
+	</fields>
+	<fields>
+		<fullName>RequirementsDescription__c</fullName>
+		<label>Requirements Description</label>
+		<required>false</required>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>TextArea</type>
+	</fields>
+	<fields>
+		<fullName>SalesEngineer__c</fullName>
+		<label>Sales Engineer</label>
+		<required>false</required>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Picklist</type>
+		<valueSet>
+			<valueSetDefinition>
+				<sorted>false</sorted>
+				<value>
+					<fullName>SE 1</fullName>
+					<default>false</default>
+					<label>SE 1</label>
+				</value>
+				<value>
+					<fullName>SE 3</fullName>
+					<default>false</default>
+					<label>SE 3</label>
+				</value>
+				<value>
+					<fullName>SE 4</fullName>
+					<default>false</default>
+					<label>SE 4</label>
+				</value>
+				<value>
+					<fullName>SE 5</fullName>
+					<default>false</default>
+					<label>SE 5</label>
+				</value>
+			</valueSetDefinition>
+		</valueSet>
+	</fields>
+	<fields>
+		<fullName>StageName</fullName>
+		<trackFeedHistory>true</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Picklist</type>
+	</fields>
+	<fields>
+		<fullName>Start_Date__c</fullName>
+		<label>License Start Date</label>
+		<required>false</required>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Date</type>
+	</fields>
+	<fields>
+		<fullName>TargetInstallationDate__c</fullName>
+		<label>Target Installation Date</label>
+		<required>false</required>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Date</type>
+	</fields>
+	<fields>
+		<fullName>Terms_Code__c</fullName>
+		<label>Payment Terms</label>
+		<required>false</required>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Picklist</type>
+		<valueSet>
+			<valueSetDefinition>
+				<sorted>false</sorted>
+				<value>
+					<fullName>Due on receipt</fullName>
+					<default>true</default>
+					<label>Due on receipt</label>
+				</value>
+				<value>
+					<fullName>Net 15</fullName>
+					<default>false</default>
+					<label>Net 15</label>
+				</value>
+				<value>
+					<fullName>Net 30</fullName>
+					<default>false</default>
+					<label>Net 30</label>
+				</value>
+				<value>
+					<fullName>Net 45</fullName>
+					<default>false</default>
+					<label>Net 45</label>
+				</value>
+				<value>
+					<fullName>Net 60</fullName>
+					<default>false</default>
+					<label>Net 60</label>
+				</value>
+				<value>
+					<fullName>2% Net 10</fullName>
+					<default>false</default>
+					<label>2% Net 10</label>
+				</value>
+			</valueSetDefinition>
+		</valueSet>
+	</fields>
+	<fields>
+		<fullName>TotalOpportunityQuantity</fullName>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+	</fields>
+	<fields>
+		<fullName>Type</fullName>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Picklist</type>
+	</fields>
+	<fields>
+		<fullName>newss_external_id__c</fullName>
+		<externalId>true</externalId>
+		<label>newss_external_id</label>
+		<length>200</length>
+		<required>false</required>
+		<trackFeedHistory>false</trackFeedHistory>
+		<trackTrending>false</trackTrending>
+		<type>Text</type>
+		<unique>false</unique>
+	</fields>
+	<listViews>
+		<fullName>AllOpportunities</fullName>
+		<filterScope>Everything</filterScope>
+		<label>All Opportunities</label>
+	</listViews>
+	<listViews>
+		<fullName>ClosingNextMonth</fullName>
+		<filterScope>Everything</filterScope>
+		<filters>
+			<field>OPPORTUNITY.CLOSED</field>
+			<operation>equals</operation>
+			<value>0</value>
+		</filters>
+		<filters>
+			<field>OPPORTUNITY.CLOSE_DATE</field>
+			<operation>equals</operation>
+			<value>NEXT_MONTH</value>
+		</filters>
+		<label>Closing Next Month</label>
+	</listViews>
+	<listViews>
+		<fullName>ClosingThisMonth</fullName>
+		<filterScope>Everything</filterScope>
+		<filters>
+			<field>OPPORTUNITY.CLOSED</field>
+			<operation>equals</operation>
+			<value>0</value>
+		</filters>
+		<filters>
+			<field>OPPORTUNITY.CLOSE_DATE</field>
+			<operation>equals</operation>
+			<value>THIS_MONTH</value>
+		</filters>
+		<label>Closing This Month</label>
+	</listViews>
+	<listViews>
+		<fullName>Default_Opportunity_Pipeline</fullName>
+		<filterScope>Mine</filterScope>
+		<filters>
+			<field>OPPORTUNITY.CLOSE_DATE</field>
+			<operation>greaterOrEqual</operation>
+			<value>LAST_N_MONTHS:3</value>
+		</filters>
+		<label>Opportunity Pipeline</label>
+	</listViews>
+	<listViews>
+		<fullName>MyOpportunities</fullName>
+		<filterScope>Mine</filterScope>
+		<label>My Opportunities</label>
+	</listViews>
+	<listViews>
+		<fullName>NewLastWeek</fullName>
+		<filterScope>Everything</filterScope>
+		<filters>
+			<field>OPPORTUNITY.CREATED_DATE</field>
+			<operation>equals</operation>
+			<value>LAST_WEEK</value>
+		</filters>
+		<label>New Last Week</label>
+	</listViews>
+	<listViews>
+		<fullName>NewThisWeek</fullName>
+		<filterScope>Everything</filterScope>
+		<filters>
+			<field>OPPORTUNITY.CREATED_DATE</field>
+			<operation>equals</operation>
+			<value>THIS_WEEK</value>
+		</filters>
+		<label>New This Week</label>
+	</listViews>
+	<listViews>
+		<fullName>Won</fullName>
+		<filterScope>Everything</filterScope>
+		<filters>
+			<field>OPPORTUNITY.CLOSED</field>
+			<operation>equals</operation>
+			<value>1</value>
+		</filters>
+		<filters>
+			<field>OPPORTUNITY.WON</field>
+			<operation>equals</operation>
+			<value>1</value>
+		</filters>
+		<label>Won</label>
+	</listViews>
+	<searchLayouts>
+		<customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
+		<customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+		<customTabListAdditionalFields>OPPORTUNITY.CLOSE_DATE</customTabListAdditionalFields>
+		<lookupDialogsAdditionalFields>OPPORTUNITY.NAME</lookupDialogsAdditionalFields>
+		<lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+		<lookupDialogsAdditionalFields>ACCOUNT.SITE</lookupDialogsAdditionalFields>
+		<lookupPhoneDialogsAdditionalFields>OPPORTUNITY.NAME</lookupPhoneDialogsAdditionalFields>
+		<lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+		<lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+		<searchResultsAdditionalFields>OPPORTUNITY.NAME</searchResultsAdditionalFields>
+		<searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+		<searchResultsAdditionalFields>ACCOUNT.SITE</searchResultsAdditionalFields>
+		<searchResultsAdditionalFields>OPPORTUNITY.STAGE_NAME</searchResultsAdditionalFields>
+		<searchResultsAdditionalFields>OPPORTUNITY.CLOSE_DATE</searchResultsAdditionalFields>
+		<searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+	</searchLayouts>
+	<sharingModel>Private</sharingModel>
+	<webLinks>
+		<fullName>Influence_Map</fullName>
+		<availability>online</availability>
+		<displayType>button</displayType>
+		<encodingKey>UTF-8</encodingKey>
+		<hasMenubar>false</hasMenubar>
+		<hasScrollbars>false</hasScrollbars>
+		<hasToolbar>false</hasToolbar>
+		<height>1000</height>
+		<isResizable>true</isResizable>
+		<linkType>url</linkType>
+		<masterLabel>Influence Map</masterLabel>
+		<openType>newWindow</openType>
+		<position>none</position>
+		<protected>false</protected>
+		<showsLocation>false</showsLocation>
+		<showsStatus>false</showsStatus>
+		<url>https://www.dreamfactory.net/sforce/gameplan/gameplan.html? 
+sforce_session_id={!API.Session_ID}&amp; 
+sforce_server_url={!API.Partner_Server_URL_120}&amp; 
+sforce_user_name={!User.Username}&amp; 
+sforce_full_name={!User.Name}&amp; 
+sforce_user_id={!User.Id}&amp; 
+custom_link_flags=Influence%20Map&amp; 
+custom_link_id={!Opportunity.Id}</url>
+		<width>1200</width>
+	</webLinks>
+	<webLinks>
+		<fullName>Requirements_Map</fullName>
+		<availability>online</availability>
+		<displayType>button</displayType>
+		<encodingKey>UTF-8</encodingKey>
+		<hasMenubar>false</hasMenubar>
+		<hasScrollbars>false</hasScrollbars>
+		<hasToolbar>false</hasToolbar>
+		<height>1000</height>
+		<isResizable>true</isResizable>
+		<linkType>url</linkType>
+		<masterLabel>Requirements Map</masterLabel>
+		<openType>newWindow</openType>
+		<position>none</position>
+		<protected>false</protected>
+		<showsLocation>false</showsLocation>
+		<showsStatus>false</showsStatus>
+		<url>https://www.dreamfactory.net/sforce/gameplan/gameplan.html? 
+sforce_session_id={!API.Session_ID}&amp; 
+sforce_server_url={!API.Partner_Server_URL_120}&amp; 
+sforce_user_name={!User.Username}&amp; 
+sforce_full_name={!User.Name}&amp; 
+sforce_user_id={!User.Id}&amp; 
+custom_link_flags=Requirements%20Map&amp; 
+custom_link_id={!Opportunity.Id}</url>
+		<width>1200</width>
+	</webLinks>
+	<webLinks>
+		<fullName>Sridhar_Test</fullName>
+		<availability>online</availability>
+		<displayType>link</displayType>
+		<encodingKey>UTF-8</encodingKey>
+		<hasMenubar>false</hasMenubar>
+		<hasScrollbars>true</hasScrollbars>
+		<hasToolbar>false</hasToolbar>
+		<height>600</height>
+		<isResizable>true</isResizable>
+		<linkType>url</linkType>
+		<masterLabel>Sridhar test</masterLabel>
+		<openType>newWindow</openType>
+		<position>none</position>
+		<protected>false</protected>
+		<showsLocation>false</showsLocation>
+		<showsStatus>false</showsStatus>
+		<url>https://www.dreamfactory.net/sforce/gameplan/gameplan.html?
+sforce_session_id={!API.Session_ID}&amp;
+sforce_server_url={!API.Partner_Server_URL_120}&amp;
+sforce_user_name={!User.Username}&amp;
+sforce_full_name={!User.Name}&amp;
+sforce_user_id={!User.Id}&amp;
+custom_link_flags=Sridhar Test&amp;
+custom_link_id={!Opportunity.Id}</url>
+	</webLinks>
+</CustomObject>
